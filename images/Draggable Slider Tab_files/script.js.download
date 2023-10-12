@@ -1,0 +1,7 @@
+const tabsBox = document.querySelector(".tabs-box");
+
+const dragging = (e) => {
+    tabsBox.scroll -= e.movementX;
+}
+
+tabsBox.addEventListener("mouseover", dragging);
